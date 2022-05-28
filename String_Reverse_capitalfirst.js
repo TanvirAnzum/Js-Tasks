@@ -9,7 +9,7 @@ function reverse(str) {
     if(i == str.length - 1) {
         let ascii = str.charCodeAt(i);
         console.log(ascii);
-        if(ascii>90) reversed_str += String.fromCharCode(ascii - 32);
+        if(ascii>96) reversed_str += String.fromCharCode(ascii - 32);
     }
     else reversed_str += str[i];
   }
