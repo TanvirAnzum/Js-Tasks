@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main__box {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+}
+.main__box img {
+  height: 100%;
+  width: 100%;
+}
+.main__btn {
+  position: relative;
+  z-index: 20;
+  top: 12em;
+}
+.main__btn .btn {
+  width: 10em;
+  height: 3em;
+  background-color: tomato;
+  color: white;
+  border: none;
+  border-radius: 0.5em;
+  font-size: 1em;
+}
+.main__btn .btn:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

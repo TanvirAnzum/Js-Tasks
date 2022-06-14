@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff99cc;
+  position: relative;
+
+  &__bg {
+    #one {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      background-color: #eaf0ee;
+      border-radius: 20px;
+      opacity: 0.8;
+      right: calc(5% + 50px);
+      animation: slow 10s infinite;
+    }
+
+    #two {
+      height: 50px;
+      width: 50px;
+      background: #297d8a;
+      border-radius: 10px;
+      opacity: 0.8;
+      position: absolute;
+      right: calc(25% + 25px);
+      animation: slow 3s infinite;
+    }
+    #three {
+      height: 50px;
+      width: 50px;
+      background: rgb(255, 56, 115);
+      border-radius: 10px;
+      opacity: 0.8;
+      position: absolute;
+      right: calc(50% - 25px);
+      animation: slow 6s infinite;
+    }
+    #four {
+      height: 50px;
+      width: 50px;
+      background: #22bd9b;
+      border-radius: 10px;
+      opacity: 0.8;
+      position: absolute;
+      left: calc(25% + 25px);
+      animation: slow 2s infinite;
+    }
+    #five {
+      height: 100px;
+      width: 100px;
+      background: #eaf0ee;
+      border-radius: 30px;
+      opacity: 0.1;
+      position: absolute;
+      left: calc(5% + 50px);
+      animation: slow 8s infinite;
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-weight: 900;
+      font-size: clamp(2.5rem, calc(2rem + 2.5vw), 5rem);
+      font-family: "La Belle Aurore", cursive;
+    }
+    .input {
+      display: flex;
+      gap: 2em;
+      align-items: center;
+      justify-content: center;
+      font-family: "Roboto Flex", sans-serif;
+      input {
+        width: 15em;
+        height: 3em;
+        font-size: 1em;
+        font-weight: 500;
+        background-color: whitesmoke;
+        border-radius: 0.5em;
+        border: none;
+        text-align: center;
+        color: black;
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      input:focus::placeholder {
+        color: transparent;
+      }
+
+      button {
+        width: 8em;
+        height: 2em;
+        font-size: 1.5em;
+        font-weight: 900;
+        background-color: whitesmoke;
+        border: none;
+        border-radius: 0.5em;
+        line-height: 1;
+        color: rgb(255, 56, 115);
+        font-family: "La Belle Aurore", cursive;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: rgb(255, 56, 115);
+        color: whitesmoke;
+      }
+    }
+  }
+}
+
+.result {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+::placeholder {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+@keyframes slow {
+  0% {
+    top: -5%;
+    opacity: 0.6;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 70%;
+    opacity: 0;
+    transform: rotate(180deg);
+  }
+}
+
+@media all and (max-width: 800px) {
+  .input {
+    flex-direction: column;
+  }
+}

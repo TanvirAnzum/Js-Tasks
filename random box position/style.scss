@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__box {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &__btn {
+    position: relative;
+    z-index: 20;
+    top: 12em;
+    .btn {
+      width: 10em;
+      height: 3em;
+      background-color: tomato;
+      color: white;
+      border: none;
+      border-radius: 0.5em;
+      font-size: 1em;
+    }
+
+    .btn:hover {
+      cursor: pointer;
+    }
+  }
+}
