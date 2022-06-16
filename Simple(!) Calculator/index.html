@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="./calculator.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main class="main">
+      <div class="main__wrapper">
+        <h1>Simple(!) Calculator</h1>
+        <form action="">
+          <input type="number" id="num-1" placeholder="First Number" />
+          <br />
+          <input type="number" id="num-2" placeholder="Second Number" />
+          <br />
+        </form>
+        <div class="buttons">
+          <div class="top">
+            <button class="btn" value="0">
+              <i class="fa-solid fa-plus"></i></button
+            ><button class="btn" value="1">
+              <i class="fa-solid fa-minus"></i></button
+            ><button class="btn" value="2">
+              <i class="fa-solid fa-multiply"></i></button
+            ><button class="btn" value="3">
+              <i class="fa-solid fa-divide"></i></button
+            ><button class="btn" value="4">
+              <i class="fa-solid fa-percent"></i>
+            </button>
+          </div>
+          <div class="bot">
+            <button class="btn" value="5">GCD</button
+            ><button class="btn" value="6">LCM</button
+            ><button class="btn" value="7">Divisor</button
+            ><button class="btn" value="8">Is Prime?</button>
+          </div>
+        </div>
+        <div class="result-area">
+          <p class="result">Result:</p>
+        </div>
+        <div class="modal">
+          <div class="content">
+            <div class="close">
+              <i class="fa-solid fa-multiply fa-3x"></i>
+            </div>
+            <div class="content__top">
+              <p class="content-title-t"></p>
+              <p class="content-val-t"></p>
+            </div>
+            <div class="content__bottom">
+              <p class="content-title-b"></p>
+              <p class="content-val-b"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

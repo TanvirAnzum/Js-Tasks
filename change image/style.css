@@ -40,4 +40,7 @@
   border: none;
   background-color: tomato;
   color: whitesmoke;
+}
+.main__container .btn:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

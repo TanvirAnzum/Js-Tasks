@@ -23,8 +23,8 @@
   border-radius: 20px;
   opacity: 0.8;
   right: calc(5% + 50px);
-  -webkit-animation: slow 10s infinite;
-          animation: slow 10s infinite;
+  -webkit-animation: slow 12s infinite;
+          animation: slow 12s infinite;
 }
 .main__bg #two {
   height: 50px;
@@ -48,6 +48,14 @@
   -webkit-animation: slow 6s infinite;
           animation: slow 6s infinite;
 }
+.main__bg #three::before,
+.main__bg #three::after {
+  content: "";
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  border-radius: 50%;
+}
 .main__bg #four {
   height: 50px;
   width: 50px;
@@ -67,8 +75,8 @@
   opacity: 0.1;
   position: absolute;
   left: calc(5% + 50px);
-  -webkit-animation: slow 8s infinite;
-          animation: slow 8s infinite;
+  -webkit-animation: slow 10s infinite;
+          animation: slow 10s infinite;
 }
 .main__content {
   display: flex;
@@ -156,7 +164,7 @@
 
 @-webkit-keyframes slow {
   0% {
-    top: -5%;
+    top: -2%;
     opacity: 0.6;
     transform: rotate(0deg);
   }
@@ -169,7 +177,7 @@
 
 @keyframes slow {
   0% {
-    top: -5%;
+    top: -2%;
     opacity: 0.6;
     transform: rotate(0deg);
   }

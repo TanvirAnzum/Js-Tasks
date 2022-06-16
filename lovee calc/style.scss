@@ -25,7 +25,7 @@
       border-radius: 20px;
       opacity: 0.8;
       right: calc(5% + 50px);
-      animation: slow 10s infinite;
+      animation: slow 12s infinite;
     }
 
     #two {
@@ -48,6 +48,14 @@
       right: calc(50% - 25px);
       animation: slow 6s infinite;
     }
+    #three::before,
+    #three::after {
+      content: "";
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      border-radius: 50%;
+    }
     #four {
       height: 50px;
       width: 50px;
@@ -66,7 +74,7 @@
       opacity: 0.1;
       position: absolute;
       left: calc(5% + 50px);
-      animation: slow 8s infinite;
+      animation: slow 10s infinite;
     }
   }
 
@@ -143,10 +151,11 @@
 
 @keyframes slow {
   0% {
-    top: -5%;
+    top: -2%;
     opacity: 0.6;
     transform: rotate(0deg);
   }
+
   100% {
     top: 70%;
     opacity: 0;

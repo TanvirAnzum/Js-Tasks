@@ -1,13 +1,22 @@
-var lastDigit = function (str1, str2) {
-  let dig = Number(str1[str1.length - 1]);
-  let pow;
-  if (str2.length == 1) {
-    pow = Number(str2[str2.length - 1]);
-    if (pow == 0) return 1;
-  } else {
-    let x = str2[str2.length - 2] + str2[str2.length - 1];
-    pow = Number(x);
+function lastDigit(as) {
+  let temp;
+  for (let i = as.length - 1; i >= 0; i--) {
+    let a = as[i];
+    let b = as[i - 1];
+    if (temp == undefined) {
+    }
+    if (a == 0) temp = 1;
+    else temp = ld(b, a);
   }
+}
+
+function single(x) {
+  return x % 10;
+}
+
+var ld = function (b, a) {
+  let dig = b % 10;
+  let pow = a % 4;
   return result(dig, pow);
 };
 
@@ -46,12 +55,3 @@ function seven(pow) {
   else if (pow % 4 == 3) return 3;
   else return 1;
 }
-
-console.log(lastDigit("10", "10000000000"));
-
-console.log(
-  lastDigit(
-    "3715290469715693021198967285016729344580685479654510946723",
-    "68819615221552997273737174557165657483427362207517952651"
-  )
-);
